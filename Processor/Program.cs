@@ -60,6 +60,7 @@ public abstract class Processor
         DateTime randomDate = DateTime.Now.AddMonths(-1) + newSpan;
         context.Hash.Add(new Hash
         {
+            Id = Guid.NewGuid(),
             Date = randomDate,
             Sha1 = hash
         });
